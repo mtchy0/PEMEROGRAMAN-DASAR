@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN4VAnsNVsSGFZxQuSTvC1L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%202(1)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jOzSIt3gdfwi",
+        "outputId": "4b9b9f6f-6b1d-477c-8fc5-389ae50128d3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "18\n",
+            "6\n",
+            "Monocrystalline\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Jawaban Latihan 1\n",
+        "\n",
+        "tegangan_v = 18\n",
+        "arus_a = 6\n",
+        "jenis_sel = \"Monocrystalline\"\n",
+        "\n",
+        "print(tegangan_v)\n",
+        "print(arus_a)\n",
+        "print(jenis_sel)\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
