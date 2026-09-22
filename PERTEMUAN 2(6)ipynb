@@ -1,0 +1,72 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuWA+Rb8mjylQPOdRYKn5R",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%202(6)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jOzSIt3gdfwi",
+        "outputId": "6c1deb94-e07e-41ac-fa49-cc337ffec0c5"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nama unit kedua: Unit-2\n",
+            "[{'nama': 'Unit-1', 'kapasitas_MW': 100, 'status': 'operasi'}, {'nama': 'Unit-2', 'kapasitas_MW': 150, 'status': 'pemeliharaan'}, {'nama': 'Unit-3', 'kapasitas_MW': 80, 'status': 'pemeliharaan'}, {'nama': 'Unit-4', 'kapasitas_MW': 120, 'status': 'operasi'}]\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Jawaban Latihan 6\n",
+        "\n",
+        "pembangkit = [{\"nama\": \"Unit-1\", \"kapasitas_MW\": 100, \"status\": \"operasi\"},\n",
+        "              {\"nama\": \"Unit-2\", \"kapasitas_MW\": 150, \"status\": \"operasi\"},\n",
+        "              {\"nama\": \"Unit-3\", \"kapasitas_MW\": 80, \"status\": \"pemeliharaan\"}]\n",
+        "\n",
+        "# Mencetak Nama Unit Kedua\n",
+        "print(\"Nama unit kedua:\", pembangkit[1][\"nama\"])\n",
+        "\n",
+        "# Mengubah Status Unit-2\n",
+        "pembangkit[1][\"status\"] = \"pemeliharaan\"\n",
+        "\n",
+        "# Menambahkan Unit Baru\n",
+        "pembangkit.append({\"nama\": \"Unit-4\",\n",
+        "                   \"kapasitas_MW\": 120,\n",
+        "                   \"status\": \"operasi\"})\n",
+        "\n",
+        "# Mencetak Seluruh Data\n",
+        "print(pembangkit)"
+      ]
+    }
+  ]
+}
