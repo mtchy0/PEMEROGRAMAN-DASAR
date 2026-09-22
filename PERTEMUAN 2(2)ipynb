@@ -1,0 +1,68 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuJOoJzcn+UxeGwIm7zaTw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%202(2)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jOzSIt3gdfwi",
+        "outputId": "5b9624d6-295f-490e-d9b7-c19fe217fbd4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10 <class 'int'>\n",
+            "12.5 <class 'float'>\n",
+            "True <class 'bool'>\n",
+            "Resistor <class 'str'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Jawaban Latihan 2\n",
+        "\n",
+        "jumlah_resistor = 10\n",
+        "tegangan_baterai = 12.5\n",
+        "rangkaian_aktif = True\n",
+        "nama_komponen = \"Resistor\"\n",
+        "\n",
+        "print(jumlah_resistor, type(jumlah_resistor))\n",
+        "print(tegangan_baterai, type(tegangan_baterai))\n",
+        "print(rangkaian_aktif, type(rangkaian_aktif))\n",
+        "print(nama_komponen, type(nama_komponen))\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
