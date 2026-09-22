@@ -1,0 +1,68 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP3O8CZt7iX5goDWGwMP2C5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%202(5)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jOzSIt3gdfwi",
+        "outputId": "8e465302-838f-4493-f148-27d4b24f3348"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nama motor: Motor Induksi\n",
+            "{'nama': 'Motor Induksi', 'daya_kw': 5.5, 'tegangan_v': 380, 'rpm': 1450}\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Jawaban Latihan 5\n",
+        "\n",
+        "motor = {\"nama\": \"Motor Induksi\",\n",
+        "    \"daya_kw\": 5.5,\n",
+        "    \"tegangan_v\": 380,\n",
+        "    \"rpm\": 1500}\n",
+        "\n",
+        "# Mencetak Salah Satu Nilai\n",
+        "print(\"Nama motor:\", motor[\"nama\"])\n",
+        "\n",
+        "# Mengubah Nilai rpm\n",
+        "motor[\"rpm\"] = 1450\n",
+        "\n",
+        "# Mencetak Seluruh Dictionary\n",
+        "print(motor)"
+      ]
+    }
+  ]
+}
