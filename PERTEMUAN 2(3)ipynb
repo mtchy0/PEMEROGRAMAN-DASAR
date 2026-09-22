@@ -1,0 +1,66 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN+Uj/eM91pYkPYGNuY7fdC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%202(3)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 9,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jOzSIt3gdfwi",
+        "outputId": "d93aa036-4001-4cc5-c25e-e106fe5f2cfb"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "PLTS Nunukan <class 'str'>\n",
+            "240 <class 'int'>\n",
+            "48.5 <class 'float'>\n",
+            "True <class 'bool'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Jawaban Latihan 3\n",
+        "\n",
+        "nama_unit = \"PLTS Nunukan\"\n",
+        "jumlah_panel = 240\n",
+        "tegangan_keluar = 48.5\n",
+        "sedang_beroperasi = True\n",
+        "\n",
+        "print(nama_unit, type(nama_unit))\n",
+        "print(jumlah_panel, type(jumlah_panel))\n",
+        "print(tegangan_keluar, type(tegangan_keluar))\n",
+        "print(sedang_beroperasi, type(sedang_beroperasi))\n"
+      ]
+    }
+  ]
+}
