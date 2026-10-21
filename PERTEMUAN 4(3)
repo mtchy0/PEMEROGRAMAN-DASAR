@@ -1,0 +1,82 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN7pKEw5U8frGTWe5rspzfw",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%204(3)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 25,
+      "metadata": {
+        "id": "Llwxj8jwlEzs",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "961e1c83-5d83-4ab1-aeee-ce530901eda0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan iradiasi matahari (W/m²): 100\n",
+            "Masukkan SoC baterai (%): 15\n",
+            "Estimasi daya panel: 180.0 W\n",
+            "Iradiasi 100.0 W/m², SoC 15.0% → Mode: EMERGENCY — kurangi beban segera\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Latihan\n",
+        "\n",
+        "# Soal 3 — Rekomendasi mode operasi PLTS\n",
+        "iradiasi = float(input(\"Masukkan iradiasi matahari (W/m²): \"))\n",
+        "soc      = float(input(\"Masukkan SoC baterai (%): \"))\n",
+        "\n",
+        "# Rumus: iradiasi * efisiensi_panel * luas_panel (efisiensi = 0.18, luas = 10 m²)\n",
+        "daya_panel = iradiasi * 0.18 * 10\n",
+        "\n",
+        "print(f\"Estimasi daya panel: {daya_panel:.1f} W\")\n",
+        "\n",
+        "if iradiasi > 600 and soc < 80:\n",
+        "    mode = \"CHARGING — prioritaskan pengisian baterai\"\n",
+        "\n",
+        "elif iradiasi > 600 and soc >= 80:\n",
+        "    mode = \"GRID-EXPORT — ekspor kelebihan daya ke jaringan\"\n",
+        "\n",
+        "elif iradiasi > 200 and soc >= 20:\n",
+        "    mode = \"NORMAL — operasi mandiri\"\n",
+        "\n",
+        "elif iradiasi <= 200 and soc >= 50:\n",
+        "    mode = \"BATTERY-ONLY — andalkan baterai\"\n",
+        "\n",
+        "else:\n",
+        "    mode = \"EMERGENCY — kurangi beban segera\"\n",
+        "\n",
+        "print(f\"Iradiasi {iradiasi} W/m², SoC {soc}% → Mode: {mode}\")\n"
+      ]
+    }
+  ]
+}
