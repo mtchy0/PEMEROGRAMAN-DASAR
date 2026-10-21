@@ -1,0 +1,80 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOiJ4edodQKSWREo31x4c+U",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%204(2)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 8,
+      "metadata": {
+        "id": "Llwxj8jwlEzs",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0deea437-d424-4f26-c35f-281ffa2b471a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan faktor daya (0.0 – 1.0): 0.95\n",
+            "Masukkan efisiensi distribusi (%): 92\n",
+            "Skor kualitas daya: 87.40\n",
+            "Faktor daya 0.95, efisiensi 92.0% → Klasifikasi: PRIMA — sistem dalam kondisi optimal\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Latihan\n",
+        "\n",
+        "# Soal 2 — Klasifikasi kualitas daya\n",
+        "faktor_daya = float(input(\"Masukkan faktor daya (0.0 – 1.0): \"))\n",
+        "efisiensi   = float(input(\"Masukkan efisiensi distribusi (%): \"))\n",
+        "\n",
+        "# Hitung skor kualitas daya menggunakan operator aritmatika (*)\n",
+        "skor = faktor_daya * efisiensi\n",
+        "\n",
+        "print(f\"Skor kualitas daya: {skor:.2f}\")\n",
+        "\n",
+        "# Kondisi paling KETAT/SPESIFIK diperiksa terlebih dahulu\n",
+        "if skor >= 85 and faktor_daya >= 0.90:\n",
+        "    klasifikasi = \"PRIMA — sistem dalam kondisi optimal\"\n",
+        "\n",
+        "elif skor >= 70 and faktor_daya >= 0.80:\n",
+        "    klasifikasi = \"BAIK — sistem memadai, pantau rutin\"\n",
+        "\n",
+        "elif skor >= 50 or faktor_daya >= 0.75:\n",
+        "    klasifikasi = \"CUKUP — ada ruang perbaikan\"\n",
+        "\n",
+        "else:\n",
+        "    klasifikasi = \"BURUK — perlu perbaikan segera\"\n",
+        "\n",
+        "print(f\"Faktor daya {faktor_daya}, efisiensi {efisiensi}% → Klasifikasi: {klasifikasi}\")"
+      ]
+    }
+  ]
+}
