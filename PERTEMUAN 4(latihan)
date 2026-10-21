@@ -1,0 +1,71 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPWqUb1DLuxMDW7Fc31z5r4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mtchy0/PEMEROGRAMAN-DASAR/blob/main/PERTEMUAN%204(latihan)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 24,
+      "metadata": {
+        "id": "Llwxj8jwlEzs",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ea8b862e-8017-4fc3-85ab-c8cb32c3f76d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan sebuah angka: 25\n",
+            "Kelipatan 5\n",
+            "Masukkan tahun: 2000\n",
+            "2000 adalah tahun kabisat\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Latihan 1 — Cek kelipatan 5\n",
+        "angka = int(input(\"Masukkan sebuah angka: \"))\n",
+        "\n",
+        "if angka % 5 == 0:\n",
+        "    print(\"Kelipatan 5\")\n",
+        "\n",
+        "\n",
+        "# Latihan 2 — Menentukan tahun kabisat\n",
+        "tahun = int(input(\"Masukkan tahun: \"))\n",
+        "\n",
+        "if tahun % 400 == 0:\n",
+        "    print(f\"{tahun} adalah tahun kabisat\")\n",
+        "elif tahun % 4 == 0 and tahun % 100 != 0:\n",
+        "    print(f\"{tahun} adalah tahun kabisat\")\n",
+        "else:\n",
+        "    print(f\"{tahun} bukan tahun kabisat\")\n"
+      ]
+    }
+  ]
+}
